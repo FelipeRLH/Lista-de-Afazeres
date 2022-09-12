@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+    <title>ToDo List</title>
+</head>
+
+<body>
+
+    <section class="mae">
+        <section class="toDo-container">
+            <!-- TITULO DO ToDo LIST -->
+            <header>
+                <h1>ToDo List</h1>
+            </header>
+
+            <!-- ------------------- ToDo AREA --------------------- -->
+
+            <!-- FORMULÁRIO PARA ADICIONAR TAREFA -->
+            <form id="toDo-form">
+                <p>Adicione sua tarefa:</p>
+                <div class="form-control">
+                    <input type="text" id="toDo-input" placeholder="O que voce vai fazer?">
+                    <button type="submit"><i class="fa-thin fa-plus"></i></button>
+                </div>
+            </form>
+
+            <!-- FORMULÁRIO PARA EDITAR TAREFA -->
+            <form id="edit-form" class="hide">
+                <p>Edite a sua tarefa:</p>
+                <div class="form-control">
+                    <input type="text" id="edit-input">
+                    <button type="submit"><i class="fa-solid fa-check-double"></i></button>
+                </div>
+                <button id="cancel-edit-btn">Cancelar</button>
+            </form>
+
+            <!-- ---------------------- TOOL AREA --------------------- -->
+
+            <!-- FORMULÁRIO PARA PESQUISAR TAREFA -->
+            <div id="toolbar">
+                <div id="search">
+                    <h4>Pesquisar:</h4>
+                    <form>
+                        <input type="text" id="search-input" placeholder="Buscar">
+                        <button id="erase-button"><i class="fa-solid fa-delete-left"></i></button>
+                    </form>
+                </div>
+
+                <!-- FILTRAR TAREFA -->
+                <div id="filter">
+                    <h4>Filtrar</h4>
+                    <select id="filter-select">
+                        <option value="all">Todos</option>
+                        <option value="done">Feitos</option>
+                        <option value="toDo">A fazer</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="toDo-container2">
+            <!-- -----------------TASKS AREA --------------------- -->
+
+            <!-- LISTA DE TAREFAS -->
+            <div id="toDo-list">
+                <div class="toDo done">
+                    <h3>Ir ao mercado...</h3>
+                    <button class="finish-toDo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="edit-toDo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="remove-toDo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="toDo">
+                    <h3>Estudar JavaScript...</h3>
+                    <button class="finish-toDo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="edit-toDo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="remove-toDo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

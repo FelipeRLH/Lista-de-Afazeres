@@ -1,0 +1,181 @@
+/* -------------- GERAL --------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* background */
+body {
+    background-image: url("https://images7.alphacoders.com/116/1168618.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* buttons */
+button {
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+button i {
+    color: #102f5e;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+button:hover {
+    background-color: #102f5e;
+    color: #fdfdfd;
+}
+
+button:hover i {
+    color: #fdfdfd;
+}
+
+/* input e select */
+input,
+select {
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.3rem;
+}
+
+/* ---------------- ToDo AREA -------------------- */
+
+.mae{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.toDo-container {
+    width: 400px;
+    height: 300px;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.toDo-container2 {
+    width: 400px;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+/* HEADER */
+.toDo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/* FORMULÁRIO DE ADICIONAR TAREFA */
+/* FORMULÁRIO DE EDITAR TAREFA */
+#toDo-form,
+#edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#toDo-form p,
+#edit-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    padding: 0.3rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+/* hide */
+.hide {
+    display: none;
+}
+
+/* ------------------- TOOL AREA ------------------ */
+
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: 0.5rem;
+}
+
+#search {
+    border-right: 1px solid #DDD;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------TASKS AREA ---------------------- */
+
+.toDo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #DDD;
+    transition: .3s;
+}
+
+.toDo h3{
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.toDo button {
+    margin-left: 2px;
+    font-size: 16px;
+}
+
+.done {
+    background-color: #395169;
+}
+
+.done h3 {
+    color: #DDD;
+    text-decoration: line-through;
+    font-style: italic;
+}
